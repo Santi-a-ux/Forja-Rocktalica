@@ -1,145 +1,138 @@
 const luthiers = [
-  {
-    id: "rosa",
-    nombre: "Rosa María Cifuentes",
-    ciudad: "Pasto, Nariño",
-    especialidad: "Tiples de concierto",
-    bio: "Aprendió con su padre en un taller de San Juan de Pasto. Trabaja el cedro y el nogal nariñense, y deja la tapa armónica con un espesor distinto en cada zona para que el tiple no se ahogue en el registro grave.",
-    foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=600&q=80",
-    alt: "Rosa María Cifuentes, luthier de tiples, en su taller"
-  },
-  {
-    id: "hernan",
-    nombre: "Hernán Quintero",
-    ciudad: "Ibagué, Tolima",
-    especialidad: "Bandola andina",
-    bio: "Salió del Conservatorio de Ibagué tocando bandola y se quedó construyéndola. Sus instrumentos se reconocen por el diapasón ligeramente más estrecho, pensado para manos que vienen del tiple.",
-    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=600&q=80",
-    alt: "Hernán Quintero, constructor de bandolas andinas"
-  },
-  {
-    id: "yara",
-    nombre: "Yara Mamani",
-    ciudad: "El Alto / Bogotá",
-    especialidad: "Charango y ronroco",
-    bio: "Trabaja con palosanto y, cuando el cliente lo pide, con tapa de pino abeto. No usa caparazón de quirquincho: todas sus cajas son de madera, con la misma proyección que busca un charango de escenario.",
-    foto: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&h=600&q=80",
-    alt: "Yara Mamani, luthier de charangos"
-  },
-  {
-    id: "tomas",
-    nombre: "Tomás Restrepo",
-    ciudad: "Medellín, Antioquia",
-    especialidad: "Cuatro llanero y restauración",
-    bio: "Restaura cuatros de los años 70 y construye copias de esos mismos moldes. Si un instrumento llega con el mango abierto, lo vuelve a encolar con la misma madera, no con un injerto genérico.",
-    foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=600&q=80",
-    alt: "Tomás Restrepo, luthier de cuatros llaneros"
-  }
+    {
+        id: 1,
+        nombre: "Fender",
+        ciudad: "California, Estados Unidos",
+        especialidad: "Guitarras eléctricas y bajos",
+        bio: "Marca reconocida por sus guitarras y bajos eléctricos, especialmente por modelos como Stratocaster, Telecaster, Precision Bass y Jazz Bass."
+    },
+    {
+        id: 2,
+        nombre: "Gibson",
+        ciudad: "Nashville, Estados Unidos",
+        especialidad: "Guitarras eléctricas de cuerpo sólido",
+        bio: "Fabricante histórico de guitarras eléctricas reconocido por modelos como Les Paul, SG y Explorer, utilizados ampliamente en rock y metal."
+    },
+    {
+        id: 3,
+        nombre: "Ibanez",
+        ciudad: "Nagoya, Japón",
+        especialidad: "Guitarras de 7 cuerdas y metal",
+        bio: "Marca japonesa especializada en guitarras eléctricas orientadas al rock y metal, con modelos de siete y ocho cuerdas y diseños de alta velocidad."
+    },
+    {
+        id: 4,
+        nombre: "Marshall",
+        ciudad: "Milton Keynes, Reino Unido",
+        especialidad: "Amplificadores para rock y metal",
+        bio: "Fabricante británico de amplificadores reconocido por su sonido de alta ganancia y por su influencia histórica en el desarrollo del sonido del rock."
+    }
 ];
+
 
 const instrumentos = [
-  {
-    id: "tiple-nariño",
-    nombre: "Tiple de concierto Nariño",
-    categoria: "tiple",
-    luthierId: "rosa",
-    precio: 1850000,
-    descripcion: "Doce cuerdas en cuatro órdenes. Tapa de cedro, aros de nogal y un puente bajo para no tapar la voz de quien canta al lado.",
-    foto: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Tiple de concierto de madera clara sobre un fondo oscuro"
-  },
-  {
-    id: "tiple-estudio",
-    nombre: "Tiple de estudio",
-    categoria: "tiple",
-    luthierId: "rosa",
-    precio: 980000,
-    descripcion: "Escala un poco más corta y acción baja. Pensado para quien empieza en la escuela y no quiere pelearse con el instrumento.",
-    foto: "https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Tiple de estudio apoyado en un taller de madera"
-  },
-  {
-    id: "bandola-ibague",
-    nombre: "Bandola andina Ibagué",
-    categoria: "bandola",
-    luthierId: "hernan",
-    precio: 2100000,
-    descripcion: "Catorce cuerdas, caja más profunda que una bandola de serenata. El sonido aguanta un formato de trío sin microfonía.",
-    foto: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Bandola andina vista de frente en un estudio"
-  },
-  {
-    id: "bandola-serenata",
-    nombre: "Bandola de serenata",
-    categoria: "bandola",
-    luthierId: "hernan",
-    precio: 1450000,
-    descripcion: "Más liviana, con tapa más delgada. Sirve para tocar sentado en un patio, no para un teatro.",
-    foto: "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Cuerpo de instrumento de cuerda con vetas de madera"
-  },
-  {
-    id: "charango-escenario",
-    nombre: "Charango de escenario",
-    categoria: "charango",
-    luthierId: "yara",
-    precio: 1250000,
-    descripcion: "Caja de palosanto, tapa de pino. Diez cuerdas. El mango tiene un radio suave para púas rápidas en huaynos.",
-    foto: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Charango de madera oscura sobre un fondo neutro"
-  },
-  {
-    id: "ronroco",
-    nombre: "Ronroco en re",
-    categoria: "charango",
-    luthierId: "yara",
-    precio: 1680000,
-    descripcion: "La voz grave de la familia del charango. Sirve para acompañar, no para competir con el charango principal.",
-    foto: "https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Manos afinando un instrumento de cuerda pequeño"
-  },
-  {
-    id: "cuatro-llanero",
-    nombre: "Cuatro llanero 17 trastes",
-    categoria: "cuatro",
-    luthierId: "tomas",
-    precio: 890000,
-    descripcion: "Cuatro cuerdas de nylon, tapa de pino canadiense y aros de sapán. El golpe de joropo no lo desentona a la tercera canción.",
-    foto: "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Cuatro llanero de cuerdas de nylon"
-  },
-  {
-    id: "cuatro-restaurado",
-    nombre: "Cuatro restaurado, década de 1970",
-    categoria: "cuatro",
-    luthierId: "tomas",
-    precio: 720000,
-    descripcion: "Llegó con el mango abierto y el puente levantado. Se reencoló, se cambió el cejillo y se dejó la pátina original.",
-    foto: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Instrumento de cuerda vintage en un taller"
-  },
-  {
-    id: "set-cuerdas-tiple",
-    nombre: "Juego de cuerdas para tiple",
-    categoria: "accesorios",
-    luthierId: "rosa",
-    precio: 48000,
-    descripcion: "Acero y entorchado según el calibre que usa Rosa en sus tiples de concierto. Incluye las doce cuerdas.",
-    foto: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=800&h=560&q=80",
-    alt: "Cuerdas y clavijas de un instrumento de cuerda vistas de cerca"
-  }
+    {
+        id: 1,
+        nombre: "Fender Player Stratocaster",
+        categoria: "Guitarra",
+        luthierId: 1,
+        precio: 4200000,
+        descripcion: "Guitarra eléctrica de cuerpo sólido con tres pastillas single-coil, puente tremolo de dos puntos y perfil de mástil moderno. Ideal para rock, blues y estilos derivados.",
+        foto: "img/fender-stratocaster.jpg",
+        alt: "Guitarra eléctrica Fender Player Stratocaster"
+    },
+    {
+        id: 2,
+        nombre: "Gibson Les Paul Standard",
+        categoria: "Guitarra",
+        luthierId: 2,
+        precio: 14500000,
+        descripcion: "Guitarra eléctrica de cuerpo sólido con construcción de caoba y tapa de arce, equipada con dos humbuckers y un sonido potente pensado para rock y hard rock.",
+        foto: "img/gibson-les-paul.jpg",
+        alt: "Guitarra eléctrica Gibson Les Paul Standard"
+    },
+    {
+        id: 3,
+        nombre: "Ibanez RG7421",
+        categoria: "Guitarra",
+        luthierId: 3,
+        precio: 5200000,
+        descripcion: "Guitarra eléctrica de siete cuerdas diseñada para estilos modernos y metal, con configuración de humbuckers y una escala pensada para una ejecución rápida.",
+        foto: "img/ibanez-rg7421.jpg",
+        alt: "Guitarra eléctrica Ibanez de siete cuerdas"
+    },
+    {
+        id: 4,
+        nombre: "Fender Player Precision Bass",
+        categoria: "Bajo",
+        luthierId: 1,
+        precio: 4500000,
+        descripcion: "Bajo eléctrico de cuatro cuerdas con pastilla split-coil, conocido por sus graves definidos y su presencia característica en rock y otros géneros musicales.",
+        foto: "img/fender-precision-bass.jpg",
+        alt: "Bajo eléctrico Fender Precision Bass"
+    },
+    {
+        id: 5,
+        nombre: "Ibanez SR505E",
+        categoria: "Bajo",
+        luthierId: 3,
+        precio: 5900000,
+        descripcion: "Bajo eléctrico de cinco cuerdas con electrónica activa y configuración orientada a obtener una respuesta definida para rock, metal y otros estilos modernos.",
+        foto: "img/ibanez-sr505e.jpg",
+        alt: "Bajo eléctrico Ibanez de cinco cuerdas"
+    },
+    {
+        id: 6,
+        nombre: "Marshall DSL40CR",
+        categoria: "Amplificador",
+        luthierId: 4,
+        precio: 5800000,
+        descripcion: "Amplificador de guitarra a válvulas de 40 W con dos canales, ecualización de tres bandas y diferentes opciones de ganancia para sonidos limpios y de alta saturación.",
+        foto: "img/marshall-dsl40cr.jpg",
+        alt: "Amplificador Marshall DSL40CR"
+    },
+    {
+        id: 7,
+        nombre: "Marshall MG30GFX",
+        categoria: "Amplificador",
+        luthierId: 4,
+        precio: 1800000,
+        descripcion: "Amplificador de guitarra de 30 W con canales limpios y overdrive, efectos integrados y controles diseñados para práctica y presentaciones pequeñas.",
+        foto: "img/marshall-mg30gfx.jpg",
+        alt: "Amplificador Marshall MG30GFX"
+    },
+    {
+        id: 8,
+        nombre: "Ibanez Tube Screamer TS9",
+        categoria: "Pedal",
+        luthierId: 3,
+        precio: 850000,
+        descripcion: "Pedal de overdrive clásico utilizado para añadir saturación y realzar medios. Es habitual como efecto independiente o como impulso para amplificadores de alta ganancia.",
+        foto: "img/ibanez-ts9.jpg",
+        alt: "Pedal Ibanez Tube Screamer TS9"
+    },
+    {
+        id: 9,
+        nombre: "Kit de púas Forja Rocktalica",
+        categoria: "Accesorios",
+        luthierId: 1,
+        precio: 35000,
+        descripcion: "Set de púas de diferentes calibres para guitarra eléctrica y bajo, pensado para practicar diferentes técnicas de interpretación.",
+        foto: "img/kit-puas.jpg",
+        alt: "Kit de púas para guitarra y bajo"
+    }
 ];
 
+
 function formatearPrecio(valor) {
-  return new Intl.NumberFormat("es-CO", {
-    style: "currency",
-    currency: "COP",
-    maximumFractionDigits: 0
-  }).format(valor);
+    return new Intl.NumberFormat("es-CO", {
+        style: "currency",
+        currency: "COP",
+        maximumFractionDigits: 0
+    }).format(valor);
 }
 
+
 function buscarLuthier(id) {
-  return luthiers.find(function (persona) {
-    return persona.id === id;
-  });
+    return luthiers.find((luthier) => luthier.id === id);
 }

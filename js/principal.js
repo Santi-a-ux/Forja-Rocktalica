@@ -3,7 +3,7 @@
   var menu = document.getElementById("menu-principal");
   var botonTema = document.querySelector("[data-tema-boton]");
   var raiz = document.documentElement;
-  var claveTema = "casapua-tema";
+  var claveTema = "forja-tema";
 
   function aplicarTema(tema) {
     raiz.setAttribute("data-tema", tema);
