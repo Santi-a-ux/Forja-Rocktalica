@@ -4,28 +4,36 @@ const luthiers = [
         nombre: "Fender",
         ciudad: "California, Estados Unidos",
         especialidad: "Guitarras eléctricas y bajos",
-        bio: "Marca reconocida por sus guitarras y bajos eléctricos, especialmente por modelos como Stratocaster, Telecaster, Precision Bass y Jazz Bass."
+        bio: "Marca reconocida por sus guitarras y bajos eléctricos, especialmente por modelos como Stratocaster, Telecaster, Precision Bass y Jazz Bass.",
+        foto: "img/fender-stratocaster.jpg",
+        alt: "Guitarra eléctrica Fender Stratocaster"
     },
     {
         id: 2,
         nombre: "Gibson",
         ciudad: "Nashville, Estados Unidos",
         especialidad: "Guitarras eléctricas de cuerpo sólido",
-        bio: "Fabricante histórico de guitarras eléctricas reconocido por modelos como Les Paul, SG y Explorer, utilizados ampliamente en rock y metal."
+        bio: "Fabricante histórico de guitarras eléctricas reconocido por modelos como Les Paul, SG y Explorer, utilizados ampliamente en rock y metal.",
+        foto: "img/gibson-les-paul.jpg",
+        alt: "Guitarra eléctrica Gibson Les Paul"
     },
     {
         id: 3,
         nombre: "Ibanez",
         ciudad: "Nagoya, Japón",
         especialidad: "Guitarras de 7 cuerdas y metal",
-        bio: "Marca japonesa especializada en guitarras eléctricas orientadas al rock y metal, con modelos de siete y ocho cuerdas y diseños de alta velocidad."
+        bio: "Marca japonesa especializada en guitarras eléctricas orientadas al rock y metal, con modelos de siete y ocho cuerdas y diseños de alta velocidad.",
+        foto: "img/ibanez-rg7421.jpg",
+        alt: "Guitarra eléctrica Ibanez de siete cuerdas"
     },
     {
         id: 4,
         nombre: "Marshall",
         ciudad: "Milton Keynes, Reino Unido",
         especialidad: "Amplificadores para rock y metal",
-        bio: "Fabricante británico de amplificadores reconocido por su sonido de alta ganancia y por su influencia histórica en el desarrollo del sonido del rock."
+        bio: "Fabricante británico de amplificadores reconocido por su sonido de alta ganancia y por su influencia histórica en el desarrollo del sonido del rock.",
+        foto: "img/marshall-dsl40cr.jpg",
+        alt: "Amplificador Marshall para guitarra"
     }
 ];
 
