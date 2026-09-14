@@ -18,11 +18,11 @@ En **Contacto** se encuentran las opciones de clases y servicios, además de un 
 
 ### Escritorio
 
-[pegar aquí captura de la página principal o del catálogo en escritorio]
+![Vista escritorio](img/capturas/escritorio.png)
 
 ### Móvil
 
-[pegar aquí captura de la página principal o del catálogo en móvil]
+![Vista móvil](img/capturas/movil.jpeg)
 
 ## Decisiones técnicas
 
